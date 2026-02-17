@@ -20,13 +20,19 @@ import com.crm.horilla.webDriverUtility.JavaUtility;
 import com.crm.horilla.webDriverUtility.UtilityClassObject;
 import com.crm.horilla.webDriverUtility.WebDriverUtility;
 
-//@Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
+/*AuthorName: Vinusha
+ * Module Name:Opportunities
+ * testCAseNAme:createOpportinityandAddTask*/
+@Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
 public class Opportunity extends BaseClass {
 	WebDriverUtility wlib = new WebDriverUtility();
 	JavaUtility javalib = new JavaUtility();
 	ExcelUtility excel = new ExcelUtility();
 	SoftAssert softAssert = new SoftAssert();
 
+	/* create Opportunity 
+	 * create task 
+	 * check that task*/
 	@Test(groups="SystemTesting")
 	public void CreateOpportunityandaddtask() throws Throwable {
 		driver.manage().window().maximize();
@@ -79,7 +85,6 @@ public class Opportunity extends BaseClass {
 		Thread.sleep(2000);
 		wlib.waitForUrl(driver, "opportunity-detail-view");
 		oppoPage.getAddTaskButton();
-		// Thread.sleep(2000);
 		ActivityPage activity = new ActivityPage(driver);
 		activity.setTitle(activityTitle);
 		activity.setsubject(activitySubject);
@@ -90,7 +95,6 @@ public class Opportunity extends BaseClass {
 		UtilityClassObject.getTest().log(Status.PASS,
 				"Activity created successfully! and confirmation message displayed Succecfully");
 		wlib.takeScreenShot(driver, activityConfirmationMSG);
-		String taskTitle = driver.findElement(By.xpath("//div[contains(text(),'opportunityTask')]")).getText();
 		softAssert.assertAll();
 	}
 

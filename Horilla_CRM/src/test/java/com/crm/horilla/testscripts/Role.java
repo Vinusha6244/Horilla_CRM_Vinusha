@@ -14,6 +14,9 @@ import com.crm.horilla.objectRepository.SettingsPage;
 import com.crm.horilla.webDriverUtility.UtilityClassObject;
 import com.crm.horilla.webDriverUtility.WebDriverUtility;
 
+/*AuthorName: Vinusha
+ * Module Name: Role
+ * testCAseNAme: Create Role*/
 @Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
 public class Role extends BaseClass {
 	WebDriverUtility wlib=new WebDriverUtility();
@@ -41,6 +44,7 @@ public class Role extends BaseClass {
 		rolePage.getSaveButton();
 		String roleMessage=rolePage.getConfirmationMessage().getText();
 		softAssert.assertEquals(roleMessage, expectedRoleMsg);
+		wlib.takeScreenShot(driver, roleMessage);
 		Thread.sleep(2000);
 		UtilityClassObject.getTest().log(Status.PASS, "Role created successfully and confirmation message displayed succefully");
 		softAssert.assertAll();

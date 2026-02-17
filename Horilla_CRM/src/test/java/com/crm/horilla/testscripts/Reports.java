@@ -18,12 +18,21 @@ import com.crm.horilla.webDriverUtility.JavaUtility;
 import com.crm.horilla.webDriverUtility.UtilityClassObject;
 import com.crm.horilla.webDriverUtility.WebDriverUtility;
 
+/*AuthorName: Vinusha
+ * Module Name: Reports
+ * testCAseNAme: download Reports*/
 //@Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
 public class Reports extends BaseClass {
 	WebDriverUtility wlib = new WebDriverUtility();
 	JavaUtility javalib = new JavaUtility();
 	ExcelUtility excel = new ExcelUtility();
 	 SoftAssert softAssert=new SoftAssert();
+	 
+		/* create New Report
+		 * click on that report
+		 * download report
+		 * and delete that report
+		 * verify message */
 	@Test(groups="SystemTesting")
 	public void DownloadReport() throws Throwable {
 		driver.manage().window().maximize();

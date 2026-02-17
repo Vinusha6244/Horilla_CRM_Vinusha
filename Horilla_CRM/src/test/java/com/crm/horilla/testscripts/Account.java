@@ -17,7 +17,7 @@ import com.crm.horilla.objectRepository.SettingsPage;
 import com.crm.horilla.webDriverUtility.UtilityClassObject;
 import com.crm.horilla.webDriverUtility.WebDriverUtility;
 
-//@Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
+@Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
 public class Account extends BaseClass{
 	WebDriverUtility wlib=new WebDriverUtility();
 	ExcelUtility excel=new ExcelUtility();
@@ -76,16 +76,15 @@ public class Account extends BaseClass{
 		softAssert.assertTrue(value);
 		UtilityClassObject.getTest().log(Status.PASS, "D Succefully The Softdeleted record displayed in recycle bin ");
 		wlib.takeScreenShot(driver, "The record displayed in recycleBin");
+		String permanentlydeletedName=settingsPage.getRecordName().getText();
 		settingsPage.getRecordDeleteIcon().click();
 		settingsPage.getConfirmDeleteButton().click();
-		String permanentlydeletedName=settingsPage.getRecordName().getText();
+		Thread.sleep(2000);
 		String deletedMsg=settingsPage.getConfirmationMessage().getText();
-		System.out.println(deletedMsg);
-		boolean permanent=deletedMsg.contains("deleted successfully!");
-		softAssert.assertEquals(permanent, true);
+		softAssert.assertEquals(deletedMsg, "Record '"+permanentlydeletedName+"' deleted successfully!");
 		wlib.takeScreenShot(driver, permanentlydeletedName+" is deleted from recycleBin");
 		UtilityClassObject.getTest().log(Status.PASS, "E Succefully The record deleted from recycle bin and message displayed succecfully");
-	    //softAssert.assertAll();
+	    softAssert.assertAll();
 	}
 
 }

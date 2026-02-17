@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.horilla.testscripts.Account">
+      <class name="com.crm.horilla.testscripts.Opportunity">
         <methods>
           <include name="connectToDB"/>
-          <include name="DeleteAccount"/>
           <include name="closeDBConnection"/>
           <include name="logOut"/>
           <include name="openBrowser"/>
           <include name="login"/>
           <include name="closeBrowser"/>
+          <include name="CreateOpportunityandaddtask"/>
         </methods>
-      </class> <!-- com.crm.horilla.testscripts.Account -->
+      </class> <!-- com.crm.horilla.testscripts.Opportunity -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

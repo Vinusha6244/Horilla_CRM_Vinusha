@@ -40,10 +40,10 @@ public class BaseClass {
 	
 	@Parameters("browser")
 	@BeforeClass(alwaysRun=true)
-	 public void openBrowser(String browser) throws Throwable
-	//public void openBrowser() throws Throwable
+	 //public void openBrowser(String browser) throws Throwable
+	 public void openBrowser() throws Throwable
 	  {
-		//String browser=fileutility.getDataFromPropertyFile("browser");
+		String browser=fileutility.getDataFromPropertyFile("browser");
 		if(browser.equals("chrome"))
 		{
 			driver=new ChromeDriver();

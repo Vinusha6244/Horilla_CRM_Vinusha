@@ -1,7 +1,6 @@
 package com.crm.horilla.testscripts;
 
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -18,13 +17,20 @@ import com.crm.horilla.objectRepository.SalesPage;
 import com.crm.horilla.webDriverUtility.JavaUtility;
 import com.crm.horilla.webDriverUtility.UtilityClassObject;
 import com.crm.horilla.webDriverUtility.WebDriverUtility;
+
+/*AuthorName: Vinusha
+ * Module Name: Lead
+ * testCAseNAme: create Lead*/
 @Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
 public class Lead extends BaseClass{
 	WebDriverUtility wlib=new WebDriverUtility();
 	   JavaUtility javalib=new JavaUtility();
 	   ExcelUtility excel=new ExcelUtility();
 	   SoftAssert softAssert=new SoftAssert();
-	
+
+		/* Create Lead 
+		 * verify confirmation message
+		 * verify the lead*/
 	@Test(groups="IntegrationTesting")
 	public void createLead() throws Throwable
 	{   driver.manage().window().maximize();

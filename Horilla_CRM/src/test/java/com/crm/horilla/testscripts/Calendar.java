@@ -18,6 +18,9 @@ import com.crm.horilla.webDriverUtility.JavaUtility;
 import com.crm.horilla.webDriverUtility.UtilityClassObject;
 import com.crm.horilla.webDriverUtility.WebDriverUtility;
 
+/*AuthorName: Vinusha
+ * Module Name: Calendar
+ * testCAseNAme:createEvent*/
 @Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
 public class Calendar extends BaseClass {
 	WebDriverUtility wlib = new WebDriverUtility();
@@ -25,6 +28,8 @@ public class Calendar extends BaseClass {
 	ExcelUtility excel = new ExcelUtility();
 	SoftAssert softAssert = new SoftAssert();
 
+	/* creste Event In Calendar module
+	 * verify that event */
 	@Test(groups="IntegrationTesting")
 	public void CreateEvent() throws Throwable {
 		driver.manage().window().maximize();
