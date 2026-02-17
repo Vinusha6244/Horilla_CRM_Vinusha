@@ -18,23 +18,22 @@ import com.crm.horilla.webDriverUtility.WebDriverUtility;
  * testCAseNAme: Verify Settings Page*/
 @Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
 public class Settings extends BaseClass {
-	WebDriverUtility wlib=new WebDriverUtility();
-	 ExcelUtility excel=new ExcelUtility();
-	 
-	@Test(groups="SmokeTesting")
-	public void verifySettingsPage() throws Throwable
-	{ String expectedSettingsTitle=excel.getDataFromExcel("ConfirmationMessage", 1, 1);
-		HorillaHomePage homePage=new HorillaHomePage(driver);
+	WebDriverUtility wlib = new WebDriverUtility();
+	ExcelUtility excel = new ExcelUtility();
+
+	@Test(groups = "SmokeTesting")
+	public void verifySettingsPage() throws Throwable {
+		String expectedSettingsTitle = excel.getDataFromExcel("ConfirmationMessage", 1, 1);
+		HorillaHomePage homePage = new HorillaHomePage(driver);
 		homePage.getSettingsIcon().click();
-		SettingsPage settingsPage=new SettingsPage(driver);
-		WebElement settingsTitle=settingsPage.getSettingsPageTitle();
+		SettingsPage settingsPage = new SettingsPage(driver);
+		WebElement settingsTitle = settingsPage.getSettingsPageTitle();
 		wlib.waitForUrl(driver, "company-information");
-		String title=settingsTitle.getText();
+		String title = settingsTitle.getText();
 		wlib.takeScreenShot(driver, title);
 		Assert.assertEquals(title, expectedSettingsTitle);
 		UtilityClassObject.getTest().log(Status.PASS, "Settings page displayed succefully");
-		
+
 	}
-	
 
 }

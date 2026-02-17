@@ -18,35 +18,28 @@ import com.crm.horilla.webDriverUtility.WebDriverUtility;
  * Module Name: Campaign
  * testCAseNAme:verifyCampaignPage*/
 @Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
-public class Campaign extends BaseClass{
-	WebDriverUtility wlib=new WebDriverUtility();
-   JavaUtility javalib=new JavaUtility();
+public class Campaign extends BaseClass {
+	WebDriverUtility wlib = new WebDriverUtility();
+	JavaUtility javalib = new JavaUtility();
 
-
-	@Test(groups="SmokeTesting")
-	public void verifyCampaingnPage() throws Throwable
-	{
+	@Test(groups = "SmokeTesting")
+	public void verifyCampaingnPage() throws Throwable {
 		wlib.waitForPageToLoad(driver);
-		HorillaHomePage homePage=new HorillaHomePage(driver);
+		HorillaHomePage homePage = new HorillaHomePage(driver);
 		homePage.clicksalesLink();
-		
-		SalesPage salesPage=new SalesPage(driver);
+
+		SalesPage salesPage = new SalesPage(driver);
 		salesPage.getCampaignLink().click();
-		
-		CampaignPage campaignPage=new CampaignPage(driver);
-		wlib.waitForUrl(driver,"campaign-view");
-		String campaignTitle=campaignPage.getCampaignPageTitle().getText();
+
+		CampaignPage campaignPage = new CampaignPage(driver);
+		wlib.waitForUrl(driver, "campaign-view");
+		String campaignTitle = campaignPage.getCampaignPageTitle().getText();
 		wlib.waitForPageToLoad(driver);
 		Thread.sleep(3000);
 		wlib.takeScreenShot(driver, campaignTitle);
 		Assert.assertEquals(campaignTitle, "Campaigns");
 		UtilityClassObject.getTest().log(Status.PASS, "Campaign Page Displayed Succecfully");
-		
+
 	}
-	
-	
-	
-	
-	
 
 }

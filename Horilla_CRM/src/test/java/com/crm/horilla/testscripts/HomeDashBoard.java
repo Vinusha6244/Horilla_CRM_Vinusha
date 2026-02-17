@@ -16,16 +16,15 @@ import com.crm.horilla.webDriverUtility.WebDriverUtility;
  * testCAseNAme: verify HomeDashBoard*/
 @Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
 public class HomeDashBoard extends BaseClass {
-	WebDriverUtility wlib=new WebDriverUtility();
-	 ExcelUtility excel=new ExcelUtility();
-	 
-	@Test(groups="SmokeTesting")
-	public void verifyDashBoardPage() throws Throwable
-	{
-		HorillaHomePage homePage=new HorillaHomePage(driver);
-		String homeTitle=homePage.getHomeDashBoard().getText();
+	WebDriverUtility wlib = new WebDriverUtility();
+	ExcelUtility excel = new ExcelUtility();
+
+	@Test(groups = "SmokeTesting")
+	public void verifyDashBoardPage() throws Throwable {
+		HorillaHomePage homePage = new HorillaHomePage(driver);
+		String homeTitle = homePage.getHomeDashBoard().getText();
 		wlib.takeScreenShot(driver, "WelCome  DashBoard Page");
-		boolean actualTitle=homeTitle.contains("Welcome");
+		boolean actualTitle = homeTitle.contains("Welcome");
 		Assert.assertEquals(actualTitle, true);
 		UtilityClassObject.getTest().log(Status.PASS, "DashBoard page loaded succefully");
 	}

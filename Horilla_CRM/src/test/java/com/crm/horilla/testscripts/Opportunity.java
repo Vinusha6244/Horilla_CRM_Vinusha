@@ -30,10 +30,10 @@ public class Opportunity extends BaseClass {
 	ExcelUtility excel = new ExcelUtility();
 	SoftAssert softAssert = new SoftAssert();
 
-	/* create Opportunity 
-	 * create task 
-	 * check that task*/
-	@Test(groups="SystemTesting")
+	/*
+	 * create Opportunity create task check that task
+	 */
+	@Test(groups = "SystemTesting")
 	public void CreateOpportunityandaddtask() throws Throwable {
 		driver.manage().window().maximize();
 		wlib.waitForPageToLoad(driver);
@@ -75,7 +75,7 @@ public class Opportunity extends BaseClass {
 			if (filterName.equals(name)) {
 				UtilityClassObject.getTest().log(Status.PASS,
 						"Opportunity created successfully! and Succecfully displayed in opportunityList page");
-				wlib.takeScreenShot(driver, name+" succecfully displayed");
+				wlib.takeScreenShot(driver, name + " succecfully displayed");
 				ele.click();
 				break;
 			}

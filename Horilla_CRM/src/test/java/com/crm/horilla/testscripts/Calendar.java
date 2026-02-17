@@ -28,9 +28,10 @@ public class Calendar extends BaseClass {
 	ExcelUtility excel = new ExcelUtility();
 	SoftAssert softAssert = new SoftAssert();
 
-	/* creste Event In Calendar module
-	 * verify that event */
-	@Test(groups="IntegrationTesting")
+	/*
+	 * creste Event In Calendar module verify that event
+	 */
+	@Test(groups = "IntegrationTesting")
 	public void CreateEvent() throws Throwable {
 		driver.manage().window().maximize();
 		wlib.waitForPageToLoad(driver);
@@ -72,7 +73,7 @@ public class Calendar extends BaseClass {
 		String activity = driver.findElement(By.xpath("//div[contains(text(),'" + activitySubject + "')]")).getText();
 		softAssert.assertEquals(activity, activitySubject);
 		UtilityClassObject.getTest().log(Status.PASS, "Event Activity displayed  in Activity module Succecfully");
-		//softAssert.assertAll();
+		// softAssert.assertAll();
 	}
 
 }

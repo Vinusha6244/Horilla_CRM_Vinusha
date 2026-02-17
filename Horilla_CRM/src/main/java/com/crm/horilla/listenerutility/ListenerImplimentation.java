@@ -1,10 +1,6 @@
 package com.crm.horilla.listenerutility;
 
-import java.io.File;
-import java.io.IOException;
-import java.time.LocalDateTime;
 import java.util.Date;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ISuite;
@@ -68,18 +64,6 @@ public class ListenerImplimentation implements ITestListener,ISuiteListener{
 	public void onTestFailure(ITestResult result) {
 		String testName=result.getMethod().getMethodName();
 		String timestamp=new Date().toString().replace(" ", "_").replace(":","_");
-		//Reporter.log(testName+" is onTestFailure",true);
-		//String timestamp=LocalDateTime.now().toString().replace(" ", "_").replace(":","_");	
-		//EventFiringWebDriver edriver=new EventFiringWebDriver(BaseClass.sdriver);
-//		File src=edriver.getScreenshotAs(OutputType.FILE);
-//		try {
-//			FileUtils.copyFile(src, new File("./screenshots/"+testName+"+"+timestamp+".png"));
-//		} catch (IOException e) {
-//			
-//			e.printStackTrace();
-//		}
-
-		//TakesScreenshot edriver=(TakesScreenshot)BaseClass.sdriver;
 		TakesScreenshot edriver=(TakesScreenshot) BaseClass.sdriver;
 	    String filePath=edriver.getScreenshotAs(OutputType.BASE64);
 		test.addScreenCaptureFromBase64String(filePath,testName+"_"+timestamp);

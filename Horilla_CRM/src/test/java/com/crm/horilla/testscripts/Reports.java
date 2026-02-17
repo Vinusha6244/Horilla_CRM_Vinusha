@@ -26,14 +26,13 @@ public class Reports extends BaseClass {
 	WebDriverUtility wlib = new WebDriverUtility();
 	JavaUtility javalib = new JavaUtility();
 	ExcelUtility excel = new ExcelUtility();
-	 SoftAssert softAssert=new SoftAssert();
-	 
-		/* create New Report
-		 * click on that report
-		 * download report
-		 * and delete that report
-		 * verify message */
-	@Test(groups="SystemTesting")
+	SoftAssert softAssert = new SoftAssert();
+
+	/*
+	 * create New Report click on that report download report and delete that report
+	 * verify message
+	 */
+	@Test(groups = "SystemTesting")
 	public void DownloadReport() throws Throwable {
 		driver.manage().window().maximize();
 		wlib.waitForPageToLoad(driver);
@@ -48,7 +47,7 @@ public class Reports extends BaseClass {
 		String emailColoumn = excel.getDataFromExcel("Reports", 8, 3);
 		String reportCreatedMsg = excel.getDataFromExcel("ConfirmationMessage", 8, 1);
 		String reportDeletedMsg = excel.getDataFromExcel("ConfirmationMessage", 9, 1);
-		
+
 		ReportsPage reportPage = new ReportsPage(driver);
 		reportPage.createReport();
 		reportPage.setReportName(reportName);
@@ -61,34 +60,36 @@ public class Reports extends BaseClass {
 		String confirmationMSG = reportPage.getConfirmationMessage().getText();
 		softAssert.assertEquals(confirmationMSG, reportCreatedMsg);
 		Thread.sleep(2000);
-		UtilityClassObject.getTest().log(Status.PASS,"Report Created succefully and confirmation message displayed Succecfully");
-        wlib.takeScreenShot(driver, confirmationMSG);
+		UtilityClassObject.getTest().log(Status.PASS,
+				"Report Created succefully and confirmation message displayed Succecfully");
+		wlib.takeScreenShot(driver, confirmationMSG);
 		reportPage.exportRecord();
 		reportPage.downloadExcel();
 		wlib.takeScreenShot(driver, "downloaded Report");
 		softAssert.assertTrue(true);
-		UtilityClassObject.getTest().log(Status.PASS,"Excel Report downloaded succefully and confirmation message displayed Succecfully");
-		 
+		UtilityClassObject.getTest().log(Status.PASS,
+				"Excel Report downloaded succefully and confirmation message displayed Succecfully");
+
 		reportPage.reportsModule();
-		List<WebElement> reportNameFilter=reportPage.getActualReportName();
-		  for(WebElement ele:reportNameFilter) 
-		  {
-			  String filterName=ele.getText();
-		  if(filterName.equals(reportName))
-		  {   
-			  driver.findElement(By.xpath("//div[contains(text(),'"+reportName+"')]/../following-sibling::td[contains(@class,'sticky ')]//img[@alt='Delete']")).click();
-			  break;
-		  }
-		  }
-		  reportPage.getSoftDeleteButton();
-		  reportPage.getConfirmDeleteButton();
-		  Thread.sleep(4000);
-		  String actualReportDeletedMsg = reportPage.getConfirmationMessage().getText();
-		  softAssert.assertEquals(actualReportDeletedMsg, reportDeletedMsg);
-		  UtilityClassObject.getTest().log(Status.PASS,"The created report record was deleted succefully and confirmation message displayed Succecfully");
-          Thread.sleep(2000);
-		  wlib.takeScreenShot(driver, "Report Deleted");
-		  softAssert.assertAll();
+		List<WebElement> reportNameFilter = reportPage.getActualReportName();
+		for (WebElement ele : reportNameFilter) {
+			String filterName = ele.getText();
+			if (filterName.equals(reportName)) {
+				driver.findElement(By.xpath("//div[contains(text(),'" + reportName
+						+ "')]/../following-sibling::td[contains(@class,'sticky ')]//img[@alt='Delete']")).click();
+				break;
+			}
+		}
+		reportPage.getSoftDeleteButton();
+		reportPage.getConfirmDeleteButton();
+		Thread.sleep(4000);
+		String actualReportDeletedMsg = reportPage.getConfirmationMessage().getText();
+		softAssert.assertEquals(actualReportDeletedMsg, reportDeletedMsg);
+		UtilityClassObject.getTest().log(Status.PASS,
+				"The created report record was deleted succefully and confirmation message displayed Succecfully");
+		Thread.sleep(2000);
+		wlib.takeScreenShot(driver, "Report Deleted");
+		softAssert.assertAll();
 	}
 
 }
