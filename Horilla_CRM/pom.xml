@@ -97,7 +97,7 @@
 						<version>3.5.4</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>BatchExecution.xml.xml</suiteXmlFile>
+								<suiteXmlFile>BatchExecution.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
