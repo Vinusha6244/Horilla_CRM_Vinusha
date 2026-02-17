@@ -17,11 +17,20 @@ import com.crm.horilla.objectRepository.SettingsPage;
 import com.crm.horilla.webDriverUtility.UtilityClassObject;
 import com.crm.horilla.webDriverUtility.WebDriverUtility;
 
+/*AuthorName: Vinusha
+ * Module Name: Account
+ * testCAseNAme: Delete Account*/
 @Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
 public class Account extends BaseClass{
 	WebDriverUtility wlib=new WebDriverUtility();
 	ExcelUtility excel=new ExcelUtility();
 	SoftAssert softAssert=new SoftAssert();
+	
+	/* Create Account 
+	 *delete account with soft delete
+	 *check in recycle bin
+	 *delete from recycle bin
+	 * */
 	@Test(groups="SystemTesting")
 	public void  DeleteAccount() throws Throwable
 	{

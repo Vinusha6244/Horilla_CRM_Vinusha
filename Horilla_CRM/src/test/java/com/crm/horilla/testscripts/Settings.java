@@ -13,6 +13,9 @@ import com.crm.horilla.objectRepository.SettingsPage;
 import com.crm.horilla.webDriverUtility.UtilityClassObject;
 import com.crm.horilla.webDriverUtility.WebDriverUtility;
 
+/*AuthorName: Vinusha
+ * Module Name: Settings
+ * testCAseNAme: Verify Settings Page*/
 @Listeners(com.crm.horilla.listenerutility.ListenerImplimentation.class)
 public class Settings extends BaseClass {
 	WebDriverUtility wlib=new WebDriverUtility();
