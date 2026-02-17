@@ -6,9 +6,9 @@
 	<artifactId>Horill_CRM</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<profiles>
+	<!--<profiles>
 		<profile>
-			<id>ST</id>
+			<id>Batch</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -24,7 +24,7 @@
 				</plugins>
 			</build>
 		</profile>
-	</profiles>
+	</profiles>-->
 
 
 	<dependencies>
