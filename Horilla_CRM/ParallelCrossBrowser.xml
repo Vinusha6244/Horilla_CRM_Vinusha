@@ -1,0 +1,59 @@
+<suite thread-count="10" name="Suite" parallel="tests">
+<listeners>
+<listener class-name="com.crm.horilla.listenerutility.ListenerImplimentation"/>
+</listeners> 
+<test thread-count="5" name="DashBoardSmokeTest">
+  <parameter name="browser" value="chrome"/> 
+    <classes>
+      <class name="com.crm.horilla.testscripts.HomeDashBoard"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="CampaignPageSmokeTest">
+   <parameter name="browser" value="edge"/>
+     <classes>
+      <class name="com.crm.horilla.testscripts.Campaign"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="SettingsPagaSmokeTest">
+ <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.horilla.testscripts.Settings"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="LeadIntegrationTest">
+    <parameter name="browser" value="chrome"/>
+     <classes>
+      <class name="com.crm.horilla.testscripts.Lead"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="RoleIntegrationTest">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.crm.horilla.testscripts.Role"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="ClendarIntegrationTest">
+   <parameter name="browser" value="chrome"/>
+     <classes>
+      <class name="com.crm.horilla.testscripts.Calendar"/>
+    </classes>
+  </test>
+ <test thread-count="5"  name="OpportunitySystemTest">
+ <parameter name="browser" value="chrome"/> 
+    <classes>
+      <class name="com.crm.horilla.testscripts.Opportunity"/>
+    </classes>
+  </test>
+   <test thread-count="5" name="AccountSystemTest">
+    <parameter name="browser" value="chrome"/> 
+    <classes>
+      <class name="com.crm.horilla.testscripts.Account"/>
+    </classes>
+  </test>
+   <test thread-count="5" name="ReportsSystemTest">
+    <parameter name="browser" value="chrome"/> 
+    <classes>
+      <class name="com.crm.horilla.testscripts.Reports"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

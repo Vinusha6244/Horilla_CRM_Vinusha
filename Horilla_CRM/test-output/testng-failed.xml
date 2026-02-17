@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.crm.horilla.listenerutility.ListenerImplimentation"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.crm.horilla.testscripts.Account">
+        <methods>
+          <include name="connectToDB"/>
+          <include name="DeleteAccount"/>
+          <include name="logOut"/>
+          <include name="closeDBConnection"/>
+          <include name="openBrowser"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.crm.horilla.testscripts.Account -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

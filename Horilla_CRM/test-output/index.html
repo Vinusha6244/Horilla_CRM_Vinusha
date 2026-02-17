@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-skipped">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Selenium TekPyramid Practice\Selenium Final Mock\Horilla_CRM\BatchExecution.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods,  1 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.crm.horilla.testscripts.Account" class="method navigator-link" hash-for-method="DeleteAccount">DeleteAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.crm.horilla.testscripts.Calendar" class="method navigator-link" hash-for-method="CreateEvent">CreateEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.crm.horilla.testscripts.Opportunity" class="method navigator-link" hash-for-method="CreateOpportunityandaddtask">CreateOpportunityandaddtask</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.crm.horilla.testscripts.Reports" class="method navigator-link" hash-for-method="DownloadReport">DownloadReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.crm.horilla.testscripts.Lead" class="method navigator-link" hash-for-method="createLead">createLead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.crm.horilla.testscripts.Role" class="method navigator-link" hash-for-method="createRole">createRole</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.crm.horilla.testscripts.Campaign" class="method navigator-link" hash-for-method="verifyCampaingnPage">verifyCampaingnPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.crm.horilla.testscripts.HomeDashBoard" class="method navigator-link" hash-for-method="verifyDashBoardPage">verifyDashBoardPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.crm.horilla.testscripts.Settings" class="method navigator-link" hash-for-method="verifySettingsPage">verifySettingsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.crm.horilla.testscripts.Account</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteAccount">
+                  </a> <!-- DeleteAccount -->
+                  <span class="method-name">DeleteAccount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;swal2-title&apos;]&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [865a4e3ef21c2202fd92a11f33fdac20, findElement {using=xpath, value=//h2[@id=&apos;swal2-title&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Gvinu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56895}, goog:processID: 15864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56895/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 865a4e3ef21c2202fd92a11f33fdac20
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.crm.horilla.generic.BaseClass.login(BaseClass.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.crm.horilla.testscripts.Campaign</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCampaingnPage">
+                  </a> <!-- verifyCampaingnPage -->
+                  <span class="method-name">verifyCampaingnPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.crm.horilla.testscripts.Lead</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createLead">
+                  </a> <!-- createLead -->
+                  <span class="method-name">createLead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.crm.horilla.testscripts.Calendar</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateEvent">
+                  </a> <!-- CreateEvent -->
+                  <span class="method-name">CreateEvent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.crm.horilla.testscripts.Role</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createRole">
+                  </a> <!-- createRole -->
+                  <span class="method-name">createRole</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.crm.horilla.testscripts.Reports</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DownloadReport">
+                  </a> <!-- DownloadReport -->
+                  <span class="method-name">DownloadReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.crm.horilla.testscripts.HomeDashBoard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDashBoardPage">
+                  </a> <!-- verifyDashBoardPage -->
+                  <span class="method-name">verifyDashBoardPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.crm.horilla.testscripts.Opportunity</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateOpportunityandaddtask">
+                  </a> <!-- CreateOpportunityandaddtask -->
+                  <span class="method-name">CreateOpportunityandaddtask</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.crm.horilla.testscripts.Settings</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySettingsPage">
+                  </a> <!-- verifySettingsPage -->
+                  <span class="method-name">verifySettingsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Selenium TekPyramid Practice\Selenium Final Mock\Horilla_CRM\BatchExecution.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.crm.horilla.listenerutility.ListenerImplimentation&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.crm.horilla.testscripts.Opportunity&quot;/&gt;
+      &lt;class name=&quot;com.crm.horilla.testscripts.HomeDashBoard&quot;/&gt;
+      &lt;class name=&quot;com.crm.horilla.testscripts.Reports&quot;/&gt;
+      &lt;class name=&quot;com.crm.horilla.testscripts.Lead&quot;/&gt;
+      &lt;class name=&quot;com.crm.horilla.testscripts.Role&quot;/&gt;
+      &lt;class name=&quot;com.crm.horilla.testscripts.Campaign&quot;/&gt;
+      &lt;class name=&quot;com.crm.horilla.testscripts.Calendar&quot;/&gt;
+      &lt;class name=&quot;com.crm.horilla.testscripts.Account&quot;/&gt;
+      &lt;class name=&quot;com.crm.horilla.testscripts.Settings&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (9 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">IntegrationTesting</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateEvent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createLead</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createRole</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SmokeTesting</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyCampaingnPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDashBoardPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySettingsPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SystemTesting</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateOpportunityandaddtask</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DeleteAccount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DownloadReport</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createLead')
+data.setCell(0, 2, 'com.crm.horilla.testscripts.Lead')
+data.setCell(0, 3, 38041);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CreateOpportunityandaddtask')
+data.setCell(1, 2, 'com.crm.horilla.testscripts.Opportunity')
+data.setCell(1, 3, 29926);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'DownloadReport')
+data.setCell(2, 2, 'com.crm.horilla.testscripts.Reports')
+data.setCell(2, 3, 29015);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'CreateEvent')
+data.setCell(3, 2, 'com.crm.horilla.testscripts.Calendar')
+data.setCell(3, 3, 18960);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createRole')
+data.setCell(4, 2, 'com.crm.horilla.testscripts.Role')
+data.setCell(4, 3, 12407);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyCampaingnPage')
+data.setCell(5, 2, 'com.crm.horilla.testscripts.Campaign')
+data.setCell(5, 3, 4301);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifySettingsPage')
+data.setCell(6, 2, 'com.crm.horilla.testscripts.Settings')
+data.setCell(6, 3, 3324);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyDashBoardPage')
+data.setCell(7, 2, 'com.crm.horilla.testscripts.HomeDashBoard')
+data.setCell(7, 3, 277);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'DeleteAccount')
+data.setCell(8, 2, 'com.crm.horilla.testscripts.Account')
+data.setCell(8, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CreateOpportunityandaddtask</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">CreateOpportunityandaddtask----onTestStart---></span>
+                <span class="reporter-method-output">CreateOpportunityandaddtask is onTestSuccess</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyDashBoardPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">verifyDashBoardPage----onTestStart---></span>
+                <span class="reporter-method-output">verifyDashBoardPage is onTestSuccess</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createRole</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">createRole----onTestStart---></span>
+                <span class="reporter-method-output">createRole is onTestSuccess</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyCampaingnPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">verifyCampaingnPage----onTestStart---></span>
+                <span class="reporter-method-output">verifyCampaingnPage is onTestSuccess</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CreateEvent</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">CreateEvent----onTestStart---></span>
+                <span class="reporter-method-output">CreateEvent is onTestSuccess</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">DownloadReport</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">DownloadReport----onTestStart---></span>
+                <span class="reporter-method-output">DownloadReport is onTestSuccess</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySettingsPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">verifySettingsPage----onTestStart---></span>
+                <span class="reporter-method-output">verifySettingsPage is onTestSuccess</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createLead</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">createLead----onTestStart---></span>
+                <span class="reporter-method-output">createLead is onTestSuccess</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">DeleteAccount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">DeleteAccount is onTestSkipped</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">16 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.crm.horilla.testscripts.Campaign</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">connectToDB</span>
+                <br/>
+                <span class="ignored-method-name">closeDBConnection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.crm.horilla.testscripts.Lead</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeDBConnection</span>
+                <br/>
+                <span class="ignored-method-name">connectToDB</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.crm.horilla.testscripts.Calendar</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeDBConnection</span>
+                <br/>
+                <span class="ignored-method-name">connectToDB</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.crm.horilla.testscripts.Account</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeDBConnection</span>
+                <br/>
+                <span class="ignored-method-name">connectToDB</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.crm.horilla.testscripts.Role</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">connectToDB</span>
+                <br/>
+                <span class="ignored-method-name">closeDBConnection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.crm.horilla.testscripts.Reports</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeDBConnection</span>
+                <br/>
+                <span class="ignored-method-name">connectToDB</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.crm.horilla.testscripts.HomeDashBoard</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeDBConnection</span>
+                <br/>
+                <span class="ignored-method-name">connectToDB</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.crm.horilla.testscripts.Settings</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">connectToDB</span>
+                <br/>
+                <span class="ignored-method-name">closeDBConnection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.horilla.testscripts.Opportunity</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">connectToDB</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1987 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreateOpportunityandaddtask</span>
+                <span class="method-start">4874 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">34805 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">40248 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.horilla.testscripts.HomeDashBoard</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">42828 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">43568 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDashBoardPage</span>
+                <span class="method-start">46374 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">46655 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">52149 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.horilla.testscripts.Reports</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">54757 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">55500 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DownloadReport</span>
+                <span class="method-start">58174 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">87206 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">92712 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.horilla.testscripts.Lead</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">95369 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">96114 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createLead</span>
+                <span class="method-start">98825 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">136868 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">142328 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.horilla.testscripts.Role</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">144784 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">145570 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createRole</span>
+                <span class="method-start">148220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">160631 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">166056 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.horilla.testscripts.Campaign</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">168702 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">169504 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCampaingnPage</span>
+                <span class="method-start">172516 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">176818 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">182296 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.horilla.testscripts.Calendar</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">184957 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">185677 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreateEvent</span>
+                <span class="method-start">189048 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">208018 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">213542 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.horilla.testscripts.Account</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">216188 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
+                <span class="method-start">216929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">217783 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">225061 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.horilla.testscripts.Settings</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">227774 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">228567 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySettingsPage</span>
+                <span class="method-start">231248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">234577 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">240076 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.horilla.testscripts.Opportunity</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeDBConnection</span>
+                <span class="method-start">242749 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

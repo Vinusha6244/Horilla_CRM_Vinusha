@@ -1,0 +1,39 @@
+<suite name="Suite">
+<parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="SmokeTest">
+  <groups>
+     <run>
+        <include name="SmokeTesting"/>
+      </run>
+  </groups>
+    <classes>
+      <class name="com.crm.horilla.testscripts.HomeDashBoard"/>
+      <class name="com.crm.horilla.testscripts.Campaign"/>
+      <class name="com.crm.horilla.testscripts.Settings"/>
+    </classes>
+  </test> 
+  <test thread-count="5" name="IntegrationTest">
+  <groups>
+     <run>
+        <include name="IntegrationTesting"/>
+      </run>
+  </groups>
+    <classes>
+      <class name="com.crm.horilla.testscripts.Lead"/>
+      <class name="com.crm.horilla.testscripts.Role"/>
+      <class name="com.crm.horilla.testscripts.Calendar"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="SystemTest">
+  <groups>
+     <run>
+        <include name="SystemTesting"/>
+      </run>
+  </groups>
+    <classes>
+      <class name="com.crm.horilla.testscripts.Opportunity"/>
+      <class name="com.crm.horilla.testscripts.Reports"/>
+      <class name="com.crm.horilla.testscripts.Account"/>
+    </classes>
+  </test><!-- Test -->
+</suite> <!-- Suite -->

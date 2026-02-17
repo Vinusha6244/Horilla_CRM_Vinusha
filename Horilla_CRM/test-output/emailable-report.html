@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">242,712</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.crm.horilla.testscripts.Account</td><td><a href="#m0">login</a></td><td rowspan="1">1771310706465</td><td rowspan="1">827</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.crm.horilla.testscripts.Account</td><td><a href="#m1">DeleteAccount</a></td><td rowspan="1">1771310707309</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.crm.horilla.testscripts.Calendar</td><td><a href="#m2">CreateEvent</a></td><td rowspan="1">1771310678584</td><td rowspan="1">18960</td></tr><tr class="passedodd"><td rowspan="1">com.crm.horilla.testscripts.Campaign</td><td><a href="#m3">verifyCampaingnPage</a></td><td rowspan="1">1771310662052</td><td rowspan="1">4301</td></tr><tr class="passedeven"><td rowspan="1">com.crm.horilla.testscripts.HomeDashBoard</td><td><a href="#m4">verifyDashBoardPage</a></td><td rowspan="1">1771310535910</td><td rowspan="1">277</td></tr><tr class="passedodd"><td rowspan="1">com.crm.horilla.testscripts.Lead</td><td><a href="#m5">createLead</a></td><td rowspan="1">1771310588361</td><td rowspan="1">38041</td></tr><tr class="passedeven"><td rowspan="1">com.crm.horilla.testscripts.Opportunity</td><td><a href="#m6">CreateOpportunityandaddtask</a></td><td rowspan="1">1771310494410</td><td rowspan="1">29926</td></tr><tr class="passedodd"><td rowspan="1">com.crm.horilla.testscripts.Reports</td><td><a href="#m7">DownloadReport</a></td><td rowspan="1">1771310547710</td><td rowspan="1">29015</td></tr><tr class="passedeven"><td rowspan="1">com.crm.horilla.testscripts.Role</td><td><a href="#m8">createRole</a></td><td rowspan="1">1771310637756</td><td rowspan="1">12407</td></tr><tr class="passedodd"><td rowspan="1">com.crm.horilla.testscripts.Settings</td><td><a href="#m9">verifySettingsPage</a></td><td rowspan="1">1771310720784</td><td rowspan="1">3324</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.crm.horilla.testscripts.Account#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;swal2-title&apos;]&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [865a4e3ef21c2202fd92a11f33fdac20, findElement {using=xpath, value=//h2[@id=&apos;swal2-title&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Gvinu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56895}, goog:processID: 15864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56895/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 865a4e3ef21c2202fd92a11f33fdac20
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.crm.horilla.generic.BaseClass.login(BaseClass.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.crm.horilla.testscripts.Account#DeleteAccount</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">DeleteAccount is onTestSkipped</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;swal2-title&apos;]&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [865a4e3ef21c2202fd92a11f33fdac20, findElement {using=xpath, value=//h2[@id=&apos;swal2-title&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Gvinu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56895}, goog:processID: 15864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56895/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 865a4e3ef21c2202fd92a11f33fdac20
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.crm.horilla.generic.BaseClass.login(BaseClass.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.crm.horilla.testscripts.Calendar#CreateEvent</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">CreateEvent----onTestStart---><br/>CreateEvent is onTestSuccess</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.crm.horilla.testscripts.Campaign#verifyCampaingnPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">verifyCampaingnPage----onTestStart---><br/>verifyCampaingnPage is onTestSuccess</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.crm.horilla.testscripts.HomeDashBoard#verifyDashBoardPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">verifyDashBoardPage----onTestStart---><br/>verifyDashBoardPage is onTestSuccess</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.crm.horilla.testscripts.Lead#createLead</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">createLead----onTestStart---><br/>createLead is onTestSuccess</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.crm.horilla.testscripts.Opportunity#CreateOpportunityandaddtask</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">CreateOpportunityandaddtask----onTestStart---><br/>CreateOpportunityandaddtask is onTestSuccess</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.crm.horilla.testscripts.Reports#DownloadReport</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">DownloadReport----onTestStart---><br/>DownloadReport is onTestSuccess</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.crm.horilla.testscripts.Role#createRole</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">createRole----onTestStart---><br/>createRole is onTestSuccess</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.crm.horilla.testscripts.Settings#verifySettingsPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">verifySettingsPage----onTestStart---><br/>verifySettingsPage is onTestSuccess</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

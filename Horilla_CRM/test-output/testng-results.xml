@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="0" skipped="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Suite----Report configuration started----]]>
+    </line>
+    <line>
+      <![CDATA[CreateOpportunityandaddtask----onTestStart--->]]>
+    </line>
+    <line>
+      <![CDATA[CreateOpportunityandaddtask is onTestSuccess]]>
+    </line>
+    <line>
+      <![CDATA[verifyDashBoardPage----onTestStart--->]]>
+    </line>
+    <line>
+      <![CDATA[verifyDashBoardPage is onTestSuccess]]>
+    </line>
+    <line>
+      <![CDATA[DownloadReport----onTestStart--->]]>
+    </line>
+    <line>
+      <![CDATA[DownloadReport is onTestSuccess]]>
+    </line>
+    <line>
+      <![CDATA[createLead----onTestStart--->]]>
+    </line>
+    <line>
+      <![CDATA[createLead is onTestSuccess]]>
+    </line>
+    <line>
+      <![CDATA[createRole----onTestStart--->]]>
+    </line>
+    <line>
+      <![CDATA[createRole is onTestSuccess]]>
+    </line>
+    <line>
+      <![CDATA[verifyCampaingnPage----onTestStart--->]]>
+    </line>
+    <line>
+      <![CDATA[verifyCampaingnPage is onTestSuccess]]>
+    </line>
+    <line>
+      <![CDATA[CreateEvent----onTestStart--->]]>
+    </line>
+    <line>
+      <![CDATA[CreateEvent is onTestSuccess]]>
+    </line>
+    <line>
+      <![CDATA[DeleteAccount----onTestStart--->]]>
+    </line>
+    <line>
+      <![CDATA[DeleteAccount is onTestSkipped]]>
+    </line>
+    <line>
+      <![CDATA[verifySettingsPage----onTestStart--->]]>
+    </line>
+    <line>
+      <![CDATA[verifySettingsPage is onTestSuccess]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-02-17T12:11:29 IST" name="Suite" finished-at="2026-02-17T12:15:32 IST" duration-ms="242712">
+    <groups>
+      <group name="SmokeTesting">
+        <method signature="Campaign.verifyCampaingnPage()[pri:0, instance:com.crm.horilla.testscripts.Campaign@2cdd0d4b]" name="verifyCampaingnPage" class="com.crm.horilla.testscripts.Campaign"/>
+        <method signature="HomeDashBoard.verifyDashBoardPage()[pri:0, instance:com.crm.horilla.testscripts.HomeDashBoard@68e965f5]" name="verifyDashBoardPage" class="com.crm.horilla.testscripts.HomeDashBoard"/>
+        <method signature="Settings.verifySettingsPage()[pri:0, instance:com.crm.horilla.testscripts.Settings@61d6015a]" name="verifySettingsPage" class="com.crm.horilla.testscripts.Settings"/>
+      </group> <!-- SmokeTesting -->
+      <group name="SystemTesting">
+        <method signature="Account.DeleteAccount()[pri:0, instance:com.crm.horilla.testscripts.Account@2e1d27ba]" name="DeleteAccount" class="com.crm.horilla.testscripts.Account"/>
+        <method signature="Opportunity.CreateOpportunityandaddtask()[pri:0, instance:com.crm.horilla.testscripts.Opportunity@1fb700ee]" name="CreateOpportunityandaddtask" class="com.crm.horilla.testscripts.Opportunity"/>
+        <method signature="Reports.DownloadReport()[pri:0, instance:com.crm.horilla.testscripts.Reports@6f27a732]" name="DownloadReport" class="com.crm.horilla.testscripts.Reports"/>
+      </group> <!-- SystemTesting -->
+      <group name="IntegrationTesting">
+        <method signature="Calendar.CreateEvent()[pri:0, instance:com.crm.horilla.testscripts.Calendar@7e9131d5]" name="CreateEvent" class="com.crm.horilla.testscripts.Calendar"/>
+        <method signature="Lead.createLead()[pri:0, instance:com.crm.horilla.testscripts.Lead@6c779568]" name="createLead" class="com.crm.horilla.testscripts.Lead"/>
+        <method signature="Role.createRole()[pri:0, instance:com.crm.horilla.testscripts.Role@f381794]" name="createRole" class="com.crm.horilla.testscripts.Role"/>
+      </group> <!-- IntegrationTesting -->
+    </groups>
+    <test started-at="2026-02-17T12:11:29 IST" name="Test" finished-at="2026-02-17T12:15:32 IST" duration-ms="242712">
+      <class name="com.crm.horilla.testscripts.Lead">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.crm.horilla.testscripts.Lead@6c779568]" started-at="2026-02-17T12:13:04 IST" name="openBrowser" finished-at="2026-02-17T12:13:05 IST" duration-ms="745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.horilla.testscripts.Lead@6c779568]" started-at="2026-02-17T12:13:05 IST" name="login" finished-at="2026-02-17T12:13:08 IST" duration-ms="2711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createLead()[pri:0, instance:com.crm.horilla.testscripts.Lead@6c779568]" started-at="2026-02-17T12:13:08 IST" name="createLead" finished-at="2026-02-17T12:13:46 IST" duration-ms="38041" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[createLead----onTestStart--->]]>
+            </line>
+            <line>
+              <![CDATA[createLead is onTestSuccess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.crm.horilla.testscripts.Lead@6c779568]" started-at="2026-02-17T12:13:46 IST" name="logOut" finished-at="2026-02-17T12:13:51 IST" duration-ms="5459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.horilla.testscripts.Lead@6c779568]" started-at="2026-02-17T12:13:51 IST" name="closeBrowser" finished-at="2026-02-17T12:13:54 IST" duration-ms="2455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.horilla.testscripts.Lead -->
+      <class name="com.crm.horilla.testscripts.Calendar">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.crm.horilla.testscripts.Calendar@7e9131d5]" started-at="2026-02-17T12:14:34 IST" name="openBrowser" finished-at="2026-02-17T12:14:35 IST" duration-ms="719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.horilla.testscripts.Calendar@7e9131d5]" started-at="2026-02-17T12:14:35 IST" name="login" finished-at="2026-02-17T12:14:38 IST" duration-ms="3370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateEvent()[pri:0, instance:com.crm.horilla.testscripts.Calendar@7e9131d5]" started-at="2026-02-17T12:14:38 IST" name="CreateEvent" finished-at="2026-02-17T12:14:57 IST" duration-ms="18960" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[CreateEvent----onTestStart--->]]>
+            </line>
+            <line>
+              <![CDATA[CreateEvent is onTestSuccess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateEvent -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.crm.horilla.testscripts.Calendar@7e9131d5]" started-at="2026-02-17T12:14:57 IST" name="logOut" finished-at="2026-02-17T12:15:03 IST" duration-ms="5524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.horilla.testscripts.Calendar@7e9131d5]" started-at="2026-02-17T12:15:03 IST" name="closeBrowser" finished-at="2026-02-17T12:15:05 IST" duration-ms="2645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.horilla.testscripts.Calendar -->
+      <class name="com.crm.horilla.testscripts.Settings">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.crm.horilla.testscripts.Settings@61d6015a]" started-at="2026-02-17T12:15:17 IST" name="openBrowser" finished-at="2026-02-17T12:15:18 IST" duration-ms="793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.horilla.testscripts.Settings@61d6015a]" started-at="2026-02-17T12:15:18 IST" name="login" finished-at="2026-02-17T12:15:20 IST" duration-ms="2681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verifySettingsPage()[pri:0, instance:com.crm.horilla.testscripts.Settings@61d6015a]" started-at="2026-02-17T12:15:20 IST" name="verifySettingsPage" finished-at="2026-02-17T12:15:24 IST" duration-ms="3324" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[verifySettingsPage----onTestStart--->]]>
+            </line>
+            <line>
+              <![CDATA[verifySettingsPage is onTestSuccess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySettingsPage -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.crm.horilla.testscripts.Settings@61d6015a]" started-at="2026-02-17T12:15:24 IST" name="logOut" finished-at="2026-02-17T12:15:29 IST" duration-ms="5498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.horilla.testscripts.Settings@61d6015a]" started-at="2026-02-17T12:15:29 IST" name="closeBrowser" finished-at="2026-02-17T12:15:32 IST" duration-ms="2645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.horilla.testscripts.Settings -->
+      <class name="com.crm.horilla.testscripts.Opportunity">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:com.crm.horilla.testscripts.Opportunity@1fb700ee]" started-at="2026-02-17T12:11:29 IST" name="connectToDB" finished-at="2026-02-17T12:11:29 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.crm.horilla.testscripts.Opportunity@1fb700ee]" started-at="2026-02-17T12:11:29 IST" name="openBrowser" finished-at="2026-02-17T12:11:31 IST" duration-ms="1956" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.horilla.testscripts.Opportunity@1fb700ee]" started-at="2026-02-17T12:11:31 IST" name="login" finished-at="2026-02-17T12:11:34 IST" duration-ms="2886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateOpportunityandaddtask()[pri:0, instance:com.crm.horilla.testscripts.Opportunity@1fb700ee]" started-at="2026-02-17T12:11:34 IST" name="CreateOpportunityandaddtask" finished-at="2026-02-17T12:12:04 IST" duration-ms="29926" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[CreateOpportunityandaddtask----onTestStart--->]]>
+            </line>
+            <line>
+              <![CDATA[CreateOpportunityandaddtask is onTestSuccess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateOpportunityandaddtask -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.crm.horilla.testscripts.Opportunity@1fb700ee]" started-at="2026-02-17T12:12:04 IST" name="logOut" finished-at="2026-02-17T12:12:09 IST" duration-ms="5436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.horilla.testscripts.Opportunity@1fb700ee]" started-at="2026-02-17T12:12:09 IST" name="closeBrowser" finished-at="2026-02-17T12:12:12 IST" duration-ms="2579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeDBConnection()[pri:0, instance:com.crm.horilla.testscripts.Opportunity@1fb700ee]" started-at="2026-02-17T12:15:32 IST" name="closeDBConnection" finished-at="2026-02-17T12:15:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDBConnection -->
+      </class> <!-- com.crm.horilla.testscripts.Opportunity -->
+      <class name="com.crm.horilla.testscripts.Campaign">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.crm.horilla.testscripts.Campaign@2cdd0d4b]" started-at="2026-02-17T12:14:18 IST" name="openBrowser" finished-at="2026-02-17T12:14:19 IST" duration-ms="802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.horilla.testscripts.Campaign@2cdd0d4b]" started-at="2026-02-17T12:14:19 IST" name="login" finished-at="2026-02-17T12:14:22 IST" duration-ms="3011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verifyCampaingnPage()[pri:0, instance:com.crm.horilla.testscripts.Campaign@2cdd0d4b]" started-at="2026-02-17T12:14:22 IST" name="verifyCampaingnPage" finished-at="2026-02-17T12:14:26 IST" duration-ms="4301" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[verifyCampaingnPage----onTestStart--->]]>
+            </line>
+            <line>
+              <![CDATA[verifyCampaingnPage is onTestSuccess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCampaingnPage -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.crm.horilla.testscripts.Campaign@2cdd0d4b]" started-at="2026-02-17T12:14:26 IST" name="logOut" finished-at="2026-02-17T12:14:31 IST" duration-ms="5477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.horilla.testscripts.Campaign@2cdd0d4b]" started-at="2026-02-17T12:14:31 IST" name="closeBrowser" finished-at="2026-02-17T12:14:34 IST" duration-ms="2661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.horilla.testscripts.Campaign -->
+      <class name="com.crm.horilla.testscripts.Role">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.crm.horilla.testscripts.Role@f381794]" started-at="2026-02-17T12:13:54 IST" name="openBrowser" finished-at="2026-02-17T12:13:55 IST" duration-ms="785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.horilla.testscripts.Role@f381794]" started-at="2026-02-17T12:13:55 IST" name="login" finished-at="2026-02-17T12:13:57 IST" duration-ms="2650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createRole()[pri:0, instance:com.crm.horilla.testscripts.Role@f381794]" started-at="2026-02-17T12:13:57 IST" name="createRole" finished-at="2026-02-17T12:14:10 IST" duration-ms="12407" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[createRole----onTestStart--->]]>
+            </line>
+            <line>
+              <![CDATA[createRole is onTestSuccess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createRole -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.crm.horilla.testscripts.Role@f381794]" started-at="2026-02-17T12:14:10 IST" name="logOut" finished-at="2026-02-17T12:14:15 IST" duration-ms="5424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.horilla.testscripts.Role@f381794]" started-at="2026-02-17T12:14:15 IST" name="closeBrowser" finished-at="2026-02-17T12:14:18 IST" duration-ms="2645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.horilla.testscripts.Role -->
+      <class name="com.crm.horilla.testscripts.Account">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.crm.horilla.testscripts.Account@2e1d27ba]" started-at="2026-02-17T12:15:05 IST" name="openBrowser" finished-at="2026-02-17T12:15:06 IST" duration-ms="741" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.horilla.testscripts.Account@2e1d27ba]" started-at="2026-02-17T12:15:06 IST" name="login" finished-at="2026-02-17T12:15:07 IST" duration-ms="827" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@id='swal2-title']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [865a4e3ef21c2202fd92a11f33fdac20, findElement {using=xpath, value=//h2[@id='swal2-title']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Gvinu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56895}, goog:processID: 15864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56895/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 865a4e3ef21c2202fd92a11f33fdac20]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@id='swal2-title']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [865a4e3ef21c2202fd92a11f33fdac20, findElement {using=xpath, value=//h2[@id='swal2-title']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Gvinu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56895}, goog:processID: 15864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56895/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 865a4e3ef21c2202fd92a11f33fdac20
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.crm.horilla.generic.BaseClass.login(BaseClass.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="DeleteAccount()[pri:0, instance:com.crm.horilla.testscripts.Account@2e1d27ba]" started-at="2026-02-17T12:15:07 IST" name="DeleteAccount" finished-at="2026-02-17T12:15:07 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@id='swal2-title']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [865a4e3ef21c2202fd92a11f33fdac20, findElement {using=xpath, value=//h2[@id='swal2-title']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Gvinu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56895}, goog:processID: 15864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56895/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 865a4e3ef21c2202fd92a11f33fdac20]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@id='swal2-title']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [865a4e3ef21c2202fd92a11f33fdac20, findElement {using=xpath, value=//h2[@id='swal2-title']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Gvinu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56895}, goog:processID: 15864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56895/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 865a4e3ef21c2202fd92a11f33fdac20
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.crm.horilla.generic.BaseClass.login(BaseClass.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[DeleteAccount is onTestSkipped]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DeleteAccount -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.crm.horilla.testscripts.Account@2e1d27ba]" started-at="2026-02-17T12:15:07 IST" name="logOut" finished-at="2026-02-17T12:15:14 IST" duration-ms="7278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.horilla.testscripts.Account@2e1d27ba]" started-at="2026-02-17T12:15:14 IST" name="closeBrowser" finished-at="2026-02-17T12:15:17 IST" duration-ms="2713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.horilla.testscripts.Account -->
+      <class name="com.crm.horilla.testscripts.Reports">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.crm.horilla.testscripts.Reports@6f27a732]" started-at="2026-02-17T12:12:24 IST" name="openBrowser" finished-at="2026-02-17T12:12:25 IST" duration-ms="743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.horilla.testscripts.Reports@6f27a732]" started-at="2026-02-17T12:12:25 IST" name="login" finished-at="2026-02-17T12:12:27 IST" duration-ms="2674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="DownloadReport()[pri:0, instance:com.crm.horilla.testscripts.Reports@6f27a732]" started-at="2026-02-17T12:12:27 IST" name="DownloadReport" finished-at="2026-02-17T12:12:56 IST" duration-ms="29015" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[DownloadReport----onTestStart--->]]>
+            </line>
+            <line>
+              <![CDATA[DownloadReport is onTestSuccess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DownloadReport -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.crm.horilla.testscripts.Reports@6f27a732]" started-at="2026-02-17T12:12:56 IST" name="logOut" finished-at="2026-02-17T12:13:02 IST" duration-ms="5506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.horilla.testscripts.Reports@6f27a732]" started-at="2026-02-17T12:13:02 IST" name="closeBrowser" finished-at="2026-02-17T12:13:04 IST" duration-ms="2657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.horilla.testscripts.Reports -->
+      <class name="com.crm.horilla.testscripts.HomeDashBoard">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.crm.horilla.testscripts.HomeDashBoard@68e965f5]" started-at="2026-02-17T12:12:12 IST" name="openBrowser" finished-at="2026-02-17T12:12:13 IST" duration-ms="740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.horilla.testscripts.HomeDashBoard@68e965f5]" started-at="2026-02-17T12:12:13 IST" name="login" finished-at="2026-02-17T12:12:15 IST" duration-ms="2806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verifyDashBoardPage()[pri:0, instance:com.crm.horilla.testscripts.HomeDashBoard@68e965f5]" started-at="2026-02-17T12:12:15 IST" name="verifyDashBoardPage" finished-at="2026-02-17T12:12:16 IST" duration-ms="277" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[verifyDashBoardPage----onTestStart--->]]>
+            </line>
+            <line>
+              <![CDATA[verifyDashBoardPage is onTestSuccess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDashBoardPage -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.crm.horilla.testscripts.HomeDashBoard@68e965f5]" started-at="2026-02-17T12:12:16 IST" name="logOut" finished-at="2026-02-17T12:12:21 IST" duration-ms="5494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.horilla.testscripts.HomeDashBoard@68e965f5]" started-at="2026-02-17T12:12:21 IST" name="closeBrowser" finished-at="2026-02-17T12:12:24 IST" duration-ms="2607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.horilla.testscripts.HomeDashBoard -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,19 @@
+<suite name="Suite">
+<parameter name="browser" value="chrome"/>
+<listeners>
+<listener class-name="com.crm.horilla.listenerutility.ListenerImplimentation"/>
+</listeners> 
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.crm.horilla.testscripts.Opportunity"/>
+      <class name="com.crm.horilla.testscripts.HomeDashBoard"/>
+      <class name="com.crm.horilla.testscripts.Reports"/>
+      <class name="com.crm.horilla.testscripts.Lead"/>
+      <class name="com.crm.horilla.testscripts.Role"/>
+      <class name="com.crm.horilla.testscripts.Campaign"/>
+      <class name="com.crm.horilla.testscripts.Calendar"/>
+      <class name="com.crm.horilla.testscripts.Account"/>
+      <class name="com.crm.horilla.testscripts.Settings"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
